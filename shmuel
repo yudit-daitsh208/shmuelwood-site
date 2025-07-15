@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shmuel_wood – Boutique Art Workshops</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.5}
+    h1{font-size:2rem;margin-bottom:.2em}
+    a.button{display:inline-block;margin:8px 0;padding:10px 18px;border:1px solid #111;text-decoration:none}
+  </style>
+</head>
+<body>
+  <h1>Shmuel_wood</h1>
+  <p>Tool for publishing unique art-workshop videos and photos directly to TikTok via Content Posting API.</p>
+
+  <h2>Legal</h2>
+  <p>
+    <a class="button" href="https://docs.google.com/document/d/your-terms-doc">Terms&nbsp;of&nbsp;Service</a>
+    <a class="button" href="https://docs.google.com/document/d/your-privacy-doc">Privacy&nbsp;Policy</a>
+  </p>
+
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:info@shmuelwood.com">info@shmuelwood.com</a></p>
+</body>
+</html>
