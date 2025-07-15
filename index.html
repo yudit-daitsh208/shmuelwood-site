@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shmuel_wood – Boutique Art Workshops</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body{font-family:sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.5}
-    h1{font-size:2rem;margin-bottom:.2em}
-    a.button{display:inline-block;margin:8px 0;padding:10px 18px;border:1px solid #111;text-decoration:none}
+    :root{
+      --accent:#8d5d35;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Raleway',sans-serif;line-height:1.6;color:#222;background:#fefefe}
+    header{
+      background:url("https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?auto=format&fit=crop&w=1600&q=60") center/cover fixed;
+      min-height:60vh;
+      display:flex;align-items:center;justify-content:center;
+    }
+    header h1{color:#fff;font-size:3rem;background:rgba(0,0,0,.5);padding:.5em 1em;border-radius:8px}
+    nav{background:#fff;padding:1rem 2rem;box-shadow:0 2px 4px rgba(0,0,0,.06);position:sticky;top:0;z-index:10}
+    nav ul{display:flex;gap:1.5rem;list-style:none;justify-content:center}
+    nav a{text-decoration:none;color:#222;font-weight:600;transition:.2s}
+    nav a:hover{color:var(--accent)}
+    section{padding:4rem 1rem;max-width:900px;margin:auto}
+    h2{margin-bottom:1rem;color:var(--accent)}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+    .gallery img{width:100%;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    .cta{background:var(--accent);color:#fff;text-align:center;padding:3rem 1rem;border-radius:12px}
+    .cta a{display:inline-block;margin-top:1rem;padding:.8rem 2rem;background:#fff;color:var(--accent);border-radius:4px;text-decoration:none;font-weight:600}
+    footer{background:#222;color:#fff;padding:2rem 1rem;text-align:center;font-size:.9rem}
+    footer a{color:#f6e6d7;text-decoration:none}
   </style>
 </head>
 <body>
-  <h1>Shmuel_wood</h1>
-  <p>Tool for publishing unique art-workshop videos and photos directly to TikTok via Content Posting API.</p>
-
-  <h2>Legal</h2>
-  <p>
-    <a class="button" href="https://docs.google.com/document/d/your-terms-doc">Terms&nbsp;of&nbsp;Service</a>
-    <a class="button" href="https://docs.google.com/document/d/your-privacy-doc">Privacy&nbsp;Policy</a>
-  </p>
-
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:info@shmuelwood.com">info@shmuelwood.com</a></p>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Shmuel_wood</h1>
+  </header>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Shmuel_wood creates <strong>unique hand‑crafted wooden art</strong> and hosts intimate boutique workshops in a warm, family‑style studio. Each session is designed to inspire creativity and let participants leave with a personalised piece they can proudly display at home.
+    </p>
+  </section>
+  <section id="workshops">
+    <h2>Our Workshops</h2>
+    <p>Small groups · Personal guidance · All levels welcome</p>
+    <ul>
+      <li><strong>Wood Turning 101</strong> – A perfect introduction to the lathe.</li>
+      <li><strong>Carve Your Story</strong> – Relief carving with traditional chisels.</li>
+      <li><strong>Family Build Day</strong> – A fun half‑day for parents & kids.</li>
+    </ul>
+  </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1511203466129-824e631920d4?auto=format&fit=crop&w=800&q=60" alt="Wood art 1"/>
+      <img src="https://images.unsplash.com/photo-1528356026494-0c6fbb579bd3?auto=format&fit=crop&w=800&q=60" alt="Wood art 2"/>
+      <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=800&q=60" alt="Wood workshop"/>
+    </div>
+  </section>
+  <section class="cta">
+    <h2>Ready to create your own masterpiece?</h2>
+    <p>Book your spot in our next workshop and experience the magic of woodcraft.</p>
+    <a href="mailto:info@shmuelwood.com?subject=Workshop%20Booking">Book Now</a>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email us any time at <a href="mailto:info@shmuelwood.com">info@shmuelwood.com</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2025 Shmuel_wood • <a href="docs/terms.html" target="_blank">Terms</a> • <a href="docs/privacy.html" target="_blank">Privacy</a></p>
+  </footer>
 </body>
 </html>
